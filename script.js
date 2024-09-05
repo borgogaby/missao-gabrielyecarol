@@ -6,43 +6,43 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Como você acredita que podemos combater o racismo na sociedade?",
+        enunciado: "Se você pudesse explorar um ambiente submerso, qual escolheria?",
         alternativas: [
             {
-                texto: "Participando de campanhas de conscientização e educação sobre igualdade racial.",
-                afirmacao: "afirmacao1"
+                texto: "O fundo dos oceanos da Terra.",
+                afirmacao: "Explorar o fundo dos oceanos da Terra revelaria espécies desconhecidas e ecossistemas que ainda permanecem um mistério para a ciência."
             },
             {
-                texto: "Denunciando atos de discriminação e apoiando políticas públicas inclusivas.",
-                afirmacao: "afirmacao2"
+                texto: "Os oceanos de uma lua de outro planeta.",
+                afirmacao: "Explorar os oceanos de uma lua, como Europa, poderia abrir portas para encontrar formas de vida alienígenas em ambientes completamente diferentes dos terrestres."
             }
            
         ]
     },
     {
-        enunciado: "Como você pode ajudar a combater a disseminação de fake news, especialmente as que perpetuam o racismo?",
+        enunciado: "Qual seria a principal ferramenta que você levaria para explorar as profundezas?",
         alternativas: [
             {
-                texto: "Verificando a veracidade das informações antes de compartilhar qualquer conteúdo, especialmente sobre temas sensíveis como racismo.",
-                afirmacao: "afirmacao3"
+                texto: "Um submarino de alta tecnologia.",
+                afirmacao: "Um submarino de alta tecnologia garantiria segurança em grandes profundidades, além de permitir visualizações detalhadas do ambiente ao redor."
             },
             {
-                texto: "Educando amigos e familiares sobre os perigos das fake news e incentivando-os a não compartilhar conteúdos falsos que perpetuam o racismo.",
-                afirmacao: "afirmacao4"
+                texto: "Um traje de mergulho avançado.",
+                afirmacao: "Um traje de mergulho avançado daria mais liberdade de movimento e proximidade com a vida marinha, proporcionando uma experiência imersiva e próxima da natureza."
             }
            
         ]
     },
     {
-        enunciado: "Como podemos incentivar o uso de energia solar e outras formas de energia limpa, especialmente em comunidades carentes?",
+        enunciado: "O que você gostaria de descobrir durante sua exploração subaquática?",
         alternativas: [
             {
-                texto: "Defendendo políticas públicas que subsidiem a energia solar para famílias de baixa renda.",
-                afirmacao:"afirmacao5"
+                texto: "Uma nova espécie de criatura marinha.",
+                afirmacao:"Descobrir uma nova espécie marinha ampliaria nosso conhecimento sobre a biodiversidade e as complexas redes de vida nos oceanos."
             },
             {
-                texto: "Promovendo a instalação de painéis solares em escolas e centros comunitários de comunidades marginalizadas.",
-                afirmacao:"afirmacao6"
+                texto: "Uma civilização perdida no fundo do mar.",
+                afirmacao:"Encontrar uma civilização perdida nas profundezas mudaria nossa compreensão da história humana e possivelmente revelaria segredos sobre antigas sociedades."
             }
         ]
     }
@@ -79,3 +79,10 @@ function respostaSelecionada (opcaoSelecionada){
     atual++
     mostraPergunta();
 }
+
+function mostraResultado(){
+    caixaPerguntas.textContent= "Resumindo...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+    mostraPergunta ();
